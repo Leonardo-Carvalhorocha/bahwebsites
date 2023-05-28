@@ -1,0 +1,41 @@
+.sobre-bg {
+  background: #000000; 
+}
+
+.sobre-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 10px;
+}
+
+.sobre-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  align-items: center;
+  gap: 40px;
+}
+
+.sobre-conteudo p {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 24px;
+  color: #868686;
+}
+
+
+@media (max-width: 1050px) {
+  .sobre-container h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .sobre-container p {
+    font-size: 16px;
+  }
+  .sobre-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .sobre-conteudo .sobre {
+    text-align: center;
+    justify-self: center;
+  }
+}

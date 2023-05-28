@@ -1,0 +1,62 @@
+.desc-bg {
+  padding: 120px 20px;
+  background: #0E1013;
+}
+
+#desc {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.desc-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.desc {
+  background: #000000;
+  padding: 20px 30px;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.desc h2 {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+.desc h2::after {
+  content: "";
+  display: block;
+  background: url("../img/icones-svg/detalhe-desenvolver.svg") no-repeat center;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+
+.desc p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 14px;
+  color: #868686;
+}
+
+@media (max-width: 800px) {
+  .desc-container {
+    justify-content: center;
+  }
+  .desc-bg h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
